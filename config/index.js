@@ -47,7 +47,7 @@ module.exports = {
   //mediumRssFeed:
   //  "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40konstantinmuenster",
   // rssFeed: "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.theguardian.com%2Finternational%2Frss",
-  rssFeed: "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Firosyadi.netlify.app%2Frss.xml",
+  mediumrssFeed: "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Firosyadi.netlify.app%2Frss.xml",
 
   shownArticles: 3,
 
@@ -86,7 +86,7 @@ module.exports = {
         url: "/#about",
       },
       {
-        name: "Features",
+        name: "Projects",
         url: "/#projects",
       },
     ],
