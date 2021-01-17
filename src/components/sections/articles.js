@@ -134,7 +134,7 @@ const Articles = () => {
           .then(res => res.json())
           // Feed also contains comments, therefore we filter for articles only, one line code below to filter comment in Github RSS
           // .then(data => data.items.filter(item => item.categories.length > 0))
-          .then(data => data.items.filter(item => item.title.length > 0))
+           .then(data => data.items.filter(item => item.title.length > 0))
           .then(newArticles => newArticles.slice(0, MAX_ARTICLES))
           .then(articles => setArticles(articles))
           .catch(error => console.log(error))

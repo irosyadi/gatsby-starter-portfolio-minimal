@@ -115,7 +115,7 @@ Next, you can edit the content for each section you want to be displayed. By def
 
 ```
 |-- content
-    |-- imprint
+    |-- attribution
     |-- index
        |-- about
        |-- contact

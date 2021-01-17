@@ -23,9 +23,9 @@ describe("IndexPage", () => {
 
   it("references legal pages", () => {
     cy.findByTestId("footer-links")
-      .findByText(/imprint/i)
+      .findByText(/attributon/i)
       .should("have.attr", "href")
-      .and("include", "imprint")
+      .and("include", "attributon")
     cy.findByTestId("footer-links")
       .findByText(/privacy/i)
       .should("have.attr", "href")
@@ -34,7 +34,7 @@ describe("IndexPage", () => {
 
   it("renders other pages", () => {
     cy.findByTestId("footer-links")
-      .findByText(/imprint/i)
+      .findByText(/attributon/i)
       .click()
     cy.findByTestId("heading").should("exist")
   })

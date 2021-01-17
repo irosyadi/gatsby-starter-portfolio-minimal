@@ -8,7 +8,7 @@ module.exports = {
   siteUrl: "https://gatsby-starter-portfolio-minimal.netlify.app/",
   siteLanguage: "en_US",
   siteIcon: "content/favicon.png", // Relative to gatsby-config file
-  seoTitleSuffix: "Imron Rosyadi", // SEO title syntax will be e.g. "Imprint - {seoTitleSuffix}"
+  seoTitleSuffix: "Imron Rosyadi", // SEO title syntax will be e.g. "Attribution - {seoTitleSuffix}"
 
   // -- THEME SETTINGS -----
   colors: {
@@ -106,8 +106,8 @@ module.exports = {
       url: "/privacy",
     },
     {
-      name: "Imprint",
-      url: "/imprint",
+      name: "Attribution",
+      url: "/attribution",
     },
   ],
 }

@@ -39,8 +39,8 @@ const StyledContentWrapper = styled(ContentWrapper)`
   }
 `
 
-const Imprint = ({ data }) => {
-  const { body, frontmatter } = data.imprint.edges[0].node
+const Attribution = ({ data }) => {
+  const { body, frontmatter } = data.attribution.edges[0].node
   const { title, seoTitle, useSeoTitleSuffix, useSplashScreen } = frontmatter
 
   const globalState = {
@@ -70,9 +70,9 @@ const Imprint = ({ data }) => {
   )
 }
 
-Imprint.propTypes = {
+Attribution.propTypes = {
   data: PropTypes.shape({
-    imprint: PropTypes.shape({
+    attribution: PropTypes.shape({
       edges: PropTypes.arrayOf(
         PropTypes.shape({
           node: PropTypes.shape({
@@ -85,11 +85,11 @@ Imprint.propTypes = {
   }).isRequired,
 }
 
-export default Imprint
+export default Attribution
 
 export const pageQuery = graphql`
   {
-    imprint: allMdx(filter: { fileAbsolutePath: { regex: "/imprint/" } }) {
+    attribution: allMdx(filter: { fileAbsolutePath: { regex: "/attribution/" } }) {
       edges {
         node {
           body
