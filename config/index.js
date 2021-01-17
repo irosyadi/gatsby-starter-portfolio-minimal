@@ -72,6 +72,11 @@ module.exports = {
 //      name: "Behance",
 //      url: "https://www.behance.net/konstanmnster",
 //    },
+    {
+      name: "External",
+      url:
+        "https://gitbook.io/irosyadi/",
+    },
   ],
 
   //-- NAVIGATION SETTINGS -----
@@ -96,13 +101,13 @@ module.exports = {
     },
   },
   footerLinks: [
-    {
-      name: "Privacy",
-      url: "/privacy",
-    },
-    {
-      name: "Imprint",
-      url: "/imprint",
-    },
+//    {
+//      name: "Privacy",
+//      url: "/privacy",
+//    },
+//    {
+//      name: "Imprint",
+//      url: "/imprint",
+//    },
   ],
 }
