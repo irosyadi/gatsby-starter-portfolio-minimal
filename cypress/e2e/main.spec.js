@@ -27,9 +27,9 @@ describe("IndexPage", () => {
       .should("have.attr", "href")
       .and("include", "attribution")
     cy.findByTestId("footer-links")
-      .findByText(/privacy/i)
+      .findByText(/weblinks/i)
       .should("have.attr", "href")
-      .and("include", "privacy")
+      .and("include", "weblinks")
   })
 
   it("renders other pages", () => {

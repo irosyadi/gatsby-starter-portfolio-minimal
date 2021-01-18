@@ -39,8 +39,8 @@ const StyledContentWrapper = styled(ContentWrapper)`
   }
 `
 
-const Privacy = ({ data }) => {
-  const { body, frontmatter } = data.privacy.edges[0].node
+const Weblinks = ({ data }) => {
+  const { body, frontmatter } = data.weblinks.edges[0].node
   const { title, seoTitle, useSeoTitleSuffix, useSplashScreen } = frontmatter
 
   const globalState = {
@@ -70,9 +70,9 @@ const Privacy = ({ data }) => {
   )
 }
 
-Privacy.propTypes = {
+Weblinks.propTypes = {
   data: PropTypes.shape({
-    privacy: PropTypes.shape({
+    weblinks: PropTypes.shape({
       edges: PropTypes.arrayOf(
         PropTypes.shape({
           node: PropTypes.shape({
@@ -85,11 +85,11 @@ Privacy.propTypes = {
   }).isRequired,
 }
 
-export default Privacy
+export default Weblinks
 
 export const pageQuery = graphql`
   {
-    privacy: allMdx(filter: { fileAbsolutePath: { regex: "/privacy/" } }) {
+    weblinks: allMdx(filter: { fileAbsolutePath: { regex: "/weblinks/" } }) {
       edges {
         node {
           body
