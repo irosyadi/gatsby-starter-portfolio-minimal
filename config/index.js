@@ -102,7 +102,7 @@ module.exports = {
   },
   footerLinks: [
     {
-      name: Weblinks",
+      name: "Weblinks",
       url: "/weblinks",
     },
     {
